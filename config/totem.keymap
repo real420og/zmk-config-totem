@@ -1138,7 +1138,7 @@
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &left_brace_m  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &left_brace_m  &trans  &trans  &curly_to  &bracket_next
                         &trans  &trans  &trans    &trans  &trans         &trans
             >;
         };
@@ -1147,7 +1147,7 @@
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &right_brace_m  &trans  &trans  &curly_to  &bracket_next
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &right_brace_m  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans          &trans
             >;
         };
