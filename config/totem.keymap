@@ -593,6 +593,13 @@
             bindings = <&kp L &kp V &kp A &kp LEFT_BRACE &kp DOLLAR &kp V>;
             label = "CURLY_NEXT";
         };
+
+        vi_terminal: vi_terminal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&hml LG(RCTRL) LC(SPACE) &kp M &kp ENTER &kp V>;
+            label = "VI_TERMINAL";
+        };
     };
 
     behaviors {
@@ -1026,7 +1033,7 @@
             bindings = <
        &none         &tab_command_tab 0 4  &kp LA(LC(LG(E)))  &command_copy   &command_grave_command 0 0    &kp MINUS     &kp EQUAL       &tt_key_cast     &none   &none
        &kp LEFT_ALT  &kp LCTRL             &kp LEFT_GUI       &kp LEFT_SHIFT  &vim_yank_buff                &kp N1        &kp N2          &kp N3           &kp N4  &kp N5
-&none  &none         &none                 &none              &none           &kp F16                       &kp NUMBER_6  &kp N7          &kp N8           &kp N9  &kp N0  &kp BACKSLASH
+&none  &none         &none                 &none              &vi_terminal    &kp F16                       &kp NUMBER_6  &kp N7          &kp N8           &kp N9  &kp N0  &kp BACKSLASH
                                            &trans             &none           &none                         &kp F16       &kp LEFT_BRACE  &kp RIGHT_BRACE
             >;
         };
