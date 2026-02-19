@@ -1154,9 +1154,9 @@
 
         layer_10 {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans  &trans      &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans  &trans      &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp ENTER  &trans  &kp ESCAPE  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp ENTER  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans     &trans
             >;
         };
