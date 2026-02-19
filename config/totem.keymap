@@ -961,7 +961,7 @@
             bindings = <
                &kp Q            &kp W             &kp E                            &kp R              &kp_and_vim_ctrl_caret 0 T    &kp Y                           &kp U                                         &kp I                                          &kp O         &kp_and_vim_past_0 0 P
                &hml LEFT_ALT A  &hml LCTRL S      &hml LEFT_COMMAND D              &hml LEFT_SHIFT F  &kp G                         &kp H                           &hml RIGHT_SHIFT J                            &hml RIGHT_COMMAND K                           &hml RCTRL L  &hml RIGHT_ALT SEMICOLON
-&kp BACKSPACE  &kp Z            &x_command_x 0 X  &c_command_c 0 C                 &v_command_v 0 V   &kp B                         &kp N                           &lt_tap_prefer_release 6 M                    &kp COMMA                                      &kp DOT       &kp SLASH                 &kp SQT
+&kp BACKSPACE  &kp Z            &x_command_x 0 X  &c_command_c 0 C                 &v_command_v 0 V   &kp B                         &kp N                           &lt_tap_prefer_release 6 M                    &lt_hold_prefer_release_retro 10 COMMA         &kp DOT       &kp SLASH                 &kp SQT
                                                   &lt_hold_prefer_release 5 GRAVE  &num_layout        &kp TAB                       &lt_tap_prefer_release 2 SPACE  &lt_hold_prefer_release_retro 8 LEFT_BRACKET  &lt_hold_prefer_release_retro 9 RIGHT_BRACKET
             >;
         };
@@ -1149,6 +1149,15 @@
         &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &right_brace_m  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans          &trans
+            >;
+        };
+
+        layer_10 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp ENTER  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans     &trans
             >;
         };
     };
