@@ -603,10 +603,40 @@
     };
 
     behaviors {
-        send_two: send_two {
+        comma_s: comma_s {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp COMMA &kp S>;
+        };
+
+        comma_e: comma_e {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA &kp E>;
+        };
+
+        comma_t: comma_t {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA &kp T>;
+        };
+
+        comma_f: comma_f {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA &kp F>;
+        };
+
+        comma_z: comma_z {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA &kp Z>;
+        };
+
+        comma_b: comma_b {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA &kp B>;
         };
 
         vimCopyBuffHold: vimCopyBuffHold {
@@ -1160,10 +1190,10 @@
 
         layer_10 {
             bindings = <
-        &trans  &trans     &trans  &trans  &trans    &trans  &trans     &trans  &trans  &trans
-        &trans  &send_two  &trans  &trans  &trans    &trans  &trans     &trans  &trans  &trans
-&trans  &trans  &trans     &trans  &trans  &trans    &trans  &kp ENTER  &trans  &trans  &trans  &trans
-                           &trans  &trans  &trans    &trans  &trans     &trans
+        &trans  &trans    &comma_e  &trans    &comma_t  &trans    &trans  &trans  &trans  &trans
+        &trans  &comma_s  &trans    &comma_f  &trans    &trans    &trans  &trans  &trans  &trans
+&trans  &comma_z  &trans  &trans    &trans    &comma_b  &trans    &kp ENTER  &trans  &trans  &trans  &trans
+                            &trans    &trans    &trans    &trans    &trans     &trans
             >;
         };
     };
