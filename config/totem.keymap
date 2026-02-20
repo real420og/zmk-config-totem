@@ -603,6 +603,14 @@
     };
 
     behaviors {
+        send_two: send_two {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <2>;
+            bindings = <
+                &kp MACRO_PARAM_1
+                &kp MACRO_PARAM_2
+            >;
+        };
         vimCopyBuffHold: vimCopyBuffHold {
             compatible = "zmk,behavior-hold-tap";
             label = "VIMCOPYBUFFHOLD";
