@@ -605,12 +605,10 @@
     behaviors {
         send_two: send_two {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <2>;
-            bindings = <
-                &kp MACRO_PARAM_1
-                &kp MACRO_PARAM_2
-            >;
+            #binding-cells = <0>;
+            bindings = <&kp COMMA &kp S>;
         };
+
         vimCopyBuffHold: vimCopyBuffHold {
             compatible = "zmk,behavior-hold-tap";
             label = "VIMCOPYBUFFHOLD";
@@ -1162,10 +1160,10 @@
 
         layer_10 {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp ENTER  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans     &trans
+        &trans  &trans     &trans  &trans  &trans    &trans  &trans     &trans  &trans  &trans
+        &trans  &send_two  &trans  &trans  &trans    &trans  &trans     &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans  &trans    &trans  &kp ENTER  &trans  &trans  &trans  &trans
+                           &trans  &trans  &trans    &trans  &trans     &trans
             >;
         };
     };
