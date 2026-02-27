@@ -639,6 +639,13 @@
             bindings = <&kp COMMA &kp B>;
         };
 
+        double_amp: double_amp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp AMPERSAND &kp AMPERSAND>;
+            label = "DOUBLE_AMP";
+        };
+
         vimCopyBuffHold: vimCopyBuffHold {
             compatible = "zmk,behavior-hold-tap";
             label = "VIMCOPYBUFFHOLD";
@@ -1115,7 +1122,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &graveQ  &graveW  &graveE  &graveR  &graveT    &none                   &none             &none          &none          &none
+       &graveQ  &graveW  &graveE  &graveR  &graveT    &none                   &double_amp       &none          &none          &none
        &graveA  &graveS  &graveD  &graveF  &graveG    &minus_greater_than     &less_than_minus  &equal_arrow   &less_equal    &greater_equal
 &none  &graveZ  &graveX  &graveC  &graveV  &graveB    &exclamatory_and_equal  &equals_colon     &less_greater  &colon_double  &pipe_double    &none
                          &none    &none    &mo 1      &kp LS(LG(LA(A)))       &none             &none
@@ -1190,10 +1197,10 @@
 
         layer_10 {
             bindings = <
-        &trans  &trans    &comma_e  &trans    &comma_t  &trans    &trans  &trans  &trans  &trans
-        &trans  &comma_s  &trans    &comma_f  &trans    &trans    &trans  &trans  &trans  &trans
-&trans  &comma_z  &trans  &trans    &trans    &comma_b  &trans    &kp ENTER  &trans  &trans  &trans  &trans
-                            &trans    &trans    &trans    &trans    &trans     &trans
+        &trans    &trans    &comma_e  &trans    &comma_t    &trans  &trans     &trans  &trans  &trans
+        &trans    &comma_s  &trans    &comma_f  &trans      &trans  &trans     &trans  &trans  &trans
+&trans  &comma_z  &trans    &trans    &trans    &comma_b    &trans  &kp ENTER  &trans  &trans  &trans  &trans
+                            &trans    &trans    &trans      &trans  &trans     &trans
             >;
         };
     };
