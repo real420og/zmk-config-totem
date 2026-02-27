@@ -642,7 +642,7 @@
         double_amp: double_amp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp AMPERSAND &kp AMPERSAND>;
+            bindings = <&kp SPACE &kp AMPERSAND &kp AMPERSAND>;
             label = "DOUBLE_AMP";
         };
 
