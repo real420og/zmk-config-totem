@@ -1053,7 +1053,7 @@
                       &kp F1   &kp F2   &kp F3             &kp F4           &kp F5        &kp LA(BSLH)       &kp LA(R)       &kp LA(L)          &kp LA(S)                   &kp LA(LEFT_ARROW)
                       &kp F6   &kp F7   &kp F8             &kp F9           &kp F10       &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW       &kp RIGHT_ARROW             &kp LA(F7)
 &kp LS(LA(NUMBER_1))  &kp F11  &kp F12  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE    &kp LS(LC(EQUAL))  &kp LC(MINUS)   &kp LS(LC(MINUS))  &kp LA(LC(LG(LEFT_ARROW)))  &kp LA(LC(LG(RIGHT_ARROW)))  &kp LS(LG(P))
-                                        &trans             &trans           &kp SPACE     &trans             &none           &none
+                                        &trans             &trans           &trans        &trans             &none           &none
             >;
         };
 
