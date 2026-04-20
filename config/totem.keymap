@@ -1098,7 +1098,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &none                     &none                     &none               &none              &none                       &none  &none  &none  &kp LS(LA(LG(O)))         &none
+       &none                     &kp LG(LA(LS(NUMBER_6)))  &none               &none              &none                       &none  &none  &none  &kp LS(LA(LG(O)))         &none
        &kp LS(LA(LG(NUMBER_5)))  &kp LG(LA(LS(P)))         &kp LG(LA(LS(D)))   &kp LS(LA(LG(F)))  &kp LG(LA(LS(G)))           &none  &none  &none  &kp LS(LG(LA(NUMBER_4)))  &none
 &none  &kp LG(LA(LS(Z)))         &kp LS(LA(LG(NUMBER_2)))  &kp LG(LA(LS(N1)))  &kp LS(LA(LG(V)))  &kp LG(LA(LS(NUMBER_3)))    &none  &none  &none  &kp LS(LG(LA(NUMBER_6)))  &none  &none
                                                            &none               &none              &none                       &none  &none  &none
